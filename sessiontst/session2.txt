@@ -1,0 +1,26 @@
+readability
+understandablility
+usublilty
+
+
+by default we will have port number 4200
+
+
+HMR  - hot module replacement
+
+Type Script
+--------------
+
+to install typescript  ::  npm i -g typescript
+
+
+difference between let/var
+
+Strongly Typing and types
+
+
+Assertions
+in constructor if one parameter is decalred as optional then the parameters followed by it should be optional
+
+2010 
+ES5- ECMASCRIPT 2015 

@@ -1,0 +1,29 @@
+creation of components
+
+generally we are having 3 steps in creation of components
+
+
+1) create a component
+2) register it in module
+3) if we want to use we have to use in html
+
+
+
+inline css externall css we will have incline css
+
+
+internal -  we will use template   - with in the type script files means 
+
+external - we will use templateUtl--  outside we will have one html file
+
+
+
+welcome 
+
+ng g c component_name
+
+
+ng serve --port 4567
+
+string interpolation - loading values dynamically
+
