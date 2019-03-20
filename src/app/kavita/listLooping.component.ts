@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { StudsService } from '../studs.service';
+import {ListStudentsService} from '../list-students.service';
 @Component({
     selector:"loopinglist",
     template:`
@@ -11,9 +11,9 @@ import { StudsService } from '../studs.service';
 })
 export class ListLoopingComponent{
     students;
-constructor(studentservice: StudsService){
-this.students = studentservice.getStudents();
-studentservice.setStudents('rao');
+constructor(studentservice: ListStudentsService){
+this.students = studentservice.getStuds();
+studentservice.addStudent('kavita');
 }
 
     // studentsservice = new studentsService();

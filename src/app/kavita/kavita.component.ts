@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {StudsService} from '../studs.service';
+import { Component } from '@angular/core';
+import {ListStudentsService} from '../list-students.service';
 @Component({
   selector: 'app-kavita',
   templateUrl: './kavita.component.html',
@@ -7,8 +7,12 @@ import {StudsService} from '../studs.service';
 })
 export class KavitaComponent{
 students;
-  constructor(stud: StudsService) { 
-    this.students = stud.getStudents();
+colspas= 4;
+isAvailable:boolean = false;
+imageURL = "../../assets/images/23.jpg";
+  constructor(liststuds: ListStudentsService) { 
+    liststuds.addStudent('asdgasd');
+    this.students = liststuds.getStuds();
   }
 
   ngOnInit() {

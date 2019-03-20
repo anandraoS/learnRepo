@@ -1,0 +1,68 @@
+bootstrap not implemented. 
+
+Dependency injection - if you will changes inone component it will be reflected in other components also
+
+if you create object it will not be reflected outside of the component
+
+@component
+@injectible
+@NgModule
+
+Data and handling events
+
+String Interpolation
+<img src ="{{imageURL}}"/>
+
+property binding - methods 
+<img [src]="imageURL" />
+String interpolation is only for string handlings and displaying strings
+property binding is better other than string handling
+
+<tr>
+    <td [attr.colspan]="colspas">sdf</td>
+
+Attribute Binding
+
+DOM ?
+Document Object Model
+
+
+javascript is subset of ts
+dom is subset of html
+
+
+
+bootstrap?
+irrespective size we have to display for that reason only we use bootstrap
+
+D:\Angular Session\learnRepo\tslint.json
+
+Bootstrap 
+
+ we installed bootstrap 
+npm i bootstrap --save -- this is for saving into pagackage.json
+
+in we imported into styles.css  -
+in styles.css
+@import '~bootstrap/dist/css/bootstrap.css';node modules/dist/css/bootstrap.css 
+
+class Binding 
+<button class="btn btn-success" [class.disabled]="isAvailable" >stosd</button>
+we are going with properties of class so we will go with class binding
+
+
+Bindings- discussed
+
+String interpolation
+property binding
+attribute binding
+class binding
+to be discussed
+------------------
+Style Binding
+event binding 
+event filtering
+event bubbling
+one way property binding ---
+two way binding
+

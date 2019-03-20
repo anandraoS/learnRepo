@@ -4,3 +4,29 @@
 <app-root></app-root>
 <loopinglist></loopinglist>
 <p>{{students}}</p>
+
+
+<!-- property binding  -->
+<img [src]="imageURL" />
+ <!-- <img src ="{{imageURL}}"/> -->
+<h2>{{imageURL}}</h2>
+<h2 [textContent]="imageURL"></h2>
+
+<table align="center" border="3px">
+    <tr>
+        <th>sdf</th>
+        <th>asgasdf</th>
+        <th>asgasdf</th>
+        <th>asgasdf</th>
+        <th>asgasdf</th>
+      </tr>
+  <tr>
+    <td [attr.colspan]="colspas">sdf</td>
+    <td>asgasdf</td>
+    <td>asgasdf</td>
+    <td>asgasdf</td>
+    <td>asgasdf</td>
+  </tr>
+</table>
+<button class="btn btn-success" [class.disabled]="isAvailable">stosd</button>
+<input type="text" class="form-control">
