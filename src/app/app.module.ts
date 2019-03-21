@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { AngualrSessionComponent } from './angualrsession.component';
 import { KavitaComponent } from './kavita/kavita.component';
 import { ListLoopingComponent } from './kavita/listLooping.component';
-
+import {FormsModule} from '@angular/forms';
 import {ListStudentsService} from './list-students.service';
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import {ListStudentsService} from './list-students.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [ListStudentsService],
   bootstrap: [KavitaComponent]

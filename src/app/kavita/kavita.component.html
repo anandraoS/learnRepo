@@ -28,5 +28,14 @@
     <td>asgasdf</td>
   </tr>
 </table>
-<button class="btn btn-success" [class.disabled]="isAvailable">stosd</button>
+<button  [style.background-color]="'blue'" (click)="onSave()">ssave</button>
 <input type="text" class="form-control">
+<div (click)="onDivClicked()">
+  <button (click)="onSave($event)"> eventBubble</button>
+  </div>
+
+  <input type="text" [value]="Stud" (keyup)="onKeyUp()">
+  <p>{{Stud}}</p>
+
+  <input [(ngModel)] ="email" (keyup)="onKeyup()">
+  <p> {{email}}</p>

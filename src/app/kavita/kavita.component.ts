@@ -8,13 +8,32 @@ import {ListStudentsService} from '../list-students.service';
 export class KavitaComponent{
 students;
 colspas= 4;
-isAvailable:boolean = false;
+isAvailable:boolean = true;
+Stud="asdfasdfasdf";
+email="asdfasdf@gmail.com";
 imageURL = "../../assets/images/23.jpg";
   constructor(liststuds: ListStudentsService) { 
     liststuds.addStudent('asdgasd');
     this.students = liststuds.getStuds();
   }
-
+  onSave($event)
+  {
+    $event.stopPropagation();
+    console.log('successfully saved');
+  }
+  onDivClicked(){
+    console.log('div is clicked');
+  }
+  onKeyUp()
+  {
+    // console.log('coming');
+    
+    console.log(this.Stud);
+  }
+  onKeyup()
+  {
+    console.log(this.email);
+  }
   ngOnInit() {
   }
 }

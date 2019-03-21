@@ -1,0 +1,29 @@
+3/21/2019
+Yesterday we discussed about 
+property binding, attribute binding, class binding
+
+
+
+today we will start here
+
+Style Binding 
+
+<button  [style.background-color]="'blue'">ssave</button>
+
+
+Event Binding
+
+(click)="onSave()"
+
+Event Bubbling 
+event bubbling means after successful execution of some event  automatically other exection also will be executed
+
+$event.stopPropagation(); it will stop exection of event bubbling
+
+
+one way binding  -  changes from ts to html will work but from html to ts will not reflect
+
+Two Way Binding  - <input [(ngModel)] = "email" (keyup)="onKeyup()">
+
+Two Way Binding
+
