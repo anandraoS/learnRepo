@@ -1,0 +1,32 @@
+<!-- first Approach -->
+
+<!-- <div *ngIf="studs.length>0">
+List of Students
+</div>
+<div *ngIf="studs.length==0">
+  no Students are there
+  </div> -->
+<!-- Second Approach -->
+  <!-- <div *ngIf="studs.length>0; else noStuds">
+    ListStuds
+  </div>
+  <ng-template #noStuds>
+No Studs are there
+  </ng-template> -->
+  <!-- Third Approach -->
+  <div *ngIf="studs.length>0; then studList else  noStuds">
+
+  </div>
+  <ng-template #studList>
+     List of studs are displaye here
+        </ng-template>
+  <ng-template #noStuds>
+      No Studs are there
+        </ng-template>
+
+<!-- <div [hidden]="studs.length>0">
+ No students
+</div> 
+<div [hidden]="studs.length==0">
+    students llist will be displayed
+   </div>  -->
