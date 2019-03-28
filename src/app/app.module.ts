@@ -13,6 +13,8 @@ import { SummeryPipe } from './kavita/summerypipe';
 import { StarComponentComponent } from './star-component/star-component.component';
 import { DirectChekComponentComponent } from './direct-chek-component/direct-chek-component.component';
 import { NavComponentComponent } from './nav-component/nav-component.component';
+import { InputFormatDirective } from './input-format.directive';
+import { SendingMessageComponent } from './sending-message/sending-message.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,9 @@ import { NavComponentComponent } from './nav-component/nav-component.component';
     SummeryPipe,
     StarComponentComponent,
     DirectChekComponentComponent,
-    NavComponentComponent
+    NavComponentComponent,
+    InputFormatDirective,
+    SendingMessageComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +35,6 @@ import { NavComponentComponent } from './nav-component/nav-component.component';
     FormsModule
   ],
   providers: [ListStudentsService],
-  bootstrap: [KavitaComponent]
+  bootstrap: [SendingMessageComponent]
 })
 export class AppModule { }

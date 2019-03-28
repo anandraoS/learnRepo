@@ -1,0 +1,14 @@
+<form action="">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input  type="text"  ngModel minlength="10" name="names" id="names" class="form-control" #names=ngModel (change)="col(names)">
+  </div>
+  <div class="form-group">
+    <label for="message">message</label>
+  <textarea  [(ngModel)] = "messages" minlength="10" id="message" name="message" ngModel cols="30"  required rows="10" #message="ngModel" class="form-control" (change)="col(message)">
+  </textarea>
+</div>
+<div class="alert alert-danger" *ngIf="message.untouched">message is needed</div>
+<div class= "alert alert-danger" *ngIf="message.errors">message should be minimum 10 characters</div>
+<button class="btn btn-primary" >send</button>
+</form>

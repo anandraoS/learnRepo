@@ -1,17 +1,24 @@
-<!-- <ol class="nav nav-pills">
+<!-- <ul class="nav nav-pills">
   <li [class.active]="viewMode=='Map'">
     <a (click)="viewMode='Map'" href="#">MapView</a></li>
   <li [class.active]="viewMode=='List'">
     <a (click)="viewMode='List'" href="#">ListView</a></li>
-</ol>
+</ul>
 <div [ngSwitch]="viewMode">
 <div *ngSwitchCase ="'Map'">Map view is there</div>
 <div *ngSwitchCase ="'List'">List view is there</div>
 <div *ngSwitchDefault>others</div>
-</div> -->
+</div>
 <button class="btn btn-secondary" (click)="addListener()">Add</button>
 <ul>
   <li *ngFor="let liste of listeners">{{liste.name}}
     <button class="btn btn-primary" (click)="removingListener(liste)">Remove</button>
   </li>
-</ul>
+</ul> -->
+
+<ul>
+    <li *ngFor="let liste of listeners;trackBy : trackListe">{{liste.name}}
+    </li>
+  </ul>
+
+  <input type="text" appInputFormat />
